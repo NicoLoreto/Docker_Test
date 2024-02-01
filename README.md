@@ -1,8 +1,8 @@
 # Simple Project to Learn Docker
 
-## Installation
+# Installation
 
-1. Install Docker on your PC.
+1. Install Docker on your PC: "https://www.docker.com/products/docker-desktop/"
 
 ## Usage
 
