@@ -66,4 +66,10 @@ For example, if you have a web application inside a Docker container running on 
     ```
     docker start [container name]
     ```
+
+# Example to create a container with a Mongo image
+
+    ```
+    docker create -p 27017:27017 --name monguito -e MONGO_INITDB_ROOT_USERNAME=nico -e MONGO_INITDB_ROOT_PASSWORD=password mongo
+    ```
     
