@@ -1,0 +1,16 @@
+{
+  "name": "docker_test",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "app to learn Docker",
+  "main": "index.js",
+  "dependencies": {
+    "express": "4.18.1",
+    "mongoose": "6.4.1"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Nicolás Loreto",
+  "license": "ISC"
+}
