@@ -67,9 +67,41 @@ For example, if you have a web application inside a Docker container running on 
     docker start [container name]
     ```
 
-# Example to create a container with a Mongo image
-
+## Example to create a container with a Mongo image
     ```
     docker create -p 27017:27017 --name monguito -e MONGO_INITDB_ROOT_USERNAME=nico -e MONGO_INITDB_ROOT_PASSWORD=password mongo
     ```
+
+# Network
+
+A network is used to communicate containers with each other.
+
+1. List networks: 
+    ```
+    docker network ls
+    ```
     
+2. Create network:
+    ```
+    docker network create [network name]
+    ```
+
+3. Create image based on a Dockerfile file
+    ```
+    docker build -t [image name:label] [path Dockerfile]
+    ```
+
+4. Create a container linked to a network
+    ```
+    docker create -p 27017:27017 --name [container name] --network [network name] -e MONGO_INITDB_ROOT_USERNAME=[username] -e MONGO_INITDB_ROOT_PASSWORD=[password] mongo
+    ```
+# Docker compose
+
+1. Create from Dockerfile:
+    ```
+    docker compose up
+    ```
+2. Delete all that the command created
+    ```
+    docker compose down
+    ```
