@@ -105,3 +105,10 @@ A network is used to communicate containers with each other.
     ```
     docker compose down
     ```
+
+## To retain data over time use 'volumes'
+
+## Execute in dev mode: 
+    ```
+    docker compose -f docker-compose-dev.yml up
+    ```
